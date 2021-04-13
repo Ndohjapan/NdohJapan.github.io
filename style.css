@@ -56,7 +56,7 @@ p{
 
 .sedan{
     background-color: var(--sedan);
-    border-radius: 7px 0 0 7px;
+    border-radius: 10px 0 0 10px;
 }
 
 .suvs{
@@ -65,7 +65,7 @@ p{
 
 .luxury{
     background-color: var(--luxury);
-    border-radius: 0 7px 7px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .sedan a{
