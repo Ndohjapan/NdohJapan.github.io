@@ -1,0 +1,112 @@
+:root{
+    --sedan: hsl(31, 77%, 52%);
+    --suvs: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+    --text-color: rgb(225, 216, 216);
+    --small-text-color: rgb(209, 205, 205);
+}
+
+h3{
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+p, .card a{
+    font-family: "Lexend Deca";
+    color: var(--small-text-color);
+}
+
+p{
+    margin-bottom: 100px;
+    line-height: 2rem;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: var(--text-color);
+    color: var(--sedan);
+    padding: 10px 20px;
+    border-radius: 4rem;
+    width: 60%;
+    border: 3px solid var(--small-text-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 100px auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-box{
+    width: 65%;
+    margin: auto ;
+    display: flex;
+    padding: 10rem;
+    justify-content: center;
+}
+
+.card{
+    padding: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.sedan{
+    background-color: var(--sedan);
+    border-radius: 7px 0 0 7px;
+}
+
+.suvs{
+    background-color: var(--suvs);
+}
+
+.luxury{
+    background-color: var(--luxury);
+    border-radius: 0 7px 7px 0;
+}
+
+.sedan a{
+    color: var(--sedan);
+}
+
+.suvs a{
+    color: var(--suvs);
+}
+
+.luxury a{
+    color: var(--luxury);
+}
+
+.card a:hover{
+    background: transparent;
+    color: var(--small-text-color);
+}
+
+
+@media(max-width: 375px) {
+    .cotainer{
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-box{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    h3{
+        margin: 0 0;
+        margin-top: 1rem;
+    }
+}
