@@ -38,7 +38,7 @@ p{
 .container{
     width: 90%;
     margin: 100px auto;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    /* border: 2px solid rgba(0, 0, 0, 0.2); */
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -57,7 +57,7 @@ p{
 
 .sedan{
     background-color: var(--sedan);
-    border-radius: 7px 0 0 7px;
+    border-radius: 7px 7px 0 0;
 }
 
 .suvs{
@@ -66,7 +66,7 @@ p{
 
 .luxury{
     background-color: var(--luxury);
-    border-radius: 0 7px 7px 0;
+    border-radius: 0 0 7px 7px;
 }
 
 .sedan a{
@@ -88,7 +88,7 @@ p{
 
 
 @media(max-width: 375px) {
-    .cotainer{
+    .container{
         width: 100%;
         margin: 0;
     }
@@ -108,5 +108,9 @@ p{
     h3{
         margin: 0 0;
         margin-top: 1rem;
+    }
+    .card{
+       width: 90%;
+       margin: auto;
     }
 }
